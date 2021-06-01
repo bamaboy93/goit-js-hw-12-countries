@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #6a5acd;
+}
+
+.main {
+  font-family: 'Sigmar One';
+  font-size: 50px;
+  color: mediumaquamarine;
+  text-align: center;
+  margin-top: 250px;
+}
+input {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 9px 15px;
+  margin: 8px auto;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 22px;
+
+  margin-top: 50px;
+}
+
+.input:focus {
+  background-color: mediumaquamarine;
+  outline: transparent;
+}
+
+.countries {
+  width: 800px;
+  height: auto;
+  padding: 12px 20px;
+  margin: 15px auto;
+  border: 2px solid rgb(79, 92, 48);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  font-size: 25px;
+}
+
+.country-list {
+  color: black;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+
+  .country-list__name {
+    height: 15px;
+  }
+}

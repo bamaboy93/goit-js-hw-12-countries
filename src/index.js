@@ -1,2 +1,2 @@
-import './sass/main.scss';
-import fetchCountries from './fetchCountries'
+import './styles.scss';
+import './js/config.js';
