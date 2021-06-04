@@ -6,12 +6,21 @@ import countryTpl from '../templates/country.hbs'
 
 const debounce = require('lodash.debounce');
 
-const onSearch = debounce ((evt) => {
-    const searchQuery = evt.target.value;
+const onSearch = debounce((evt) => {
+  
+  const searchQuery = evt.target.value.trim();
+  
+  clearMarkup();
+  
+    if (!searchQuery) {
+    return
+  }
+
     
-    clearMarkup();
     
     fetchCountries(searchQuery).then(countries => {
+      
+    
       if (countries.length >= 10) {
         
         return error(message);
